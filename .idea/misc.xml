@@ -22,7 +22,9 @@
         <entry key="app/src/main/res/layout/activity_records.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.129981884057971" />
         <entry key="app/src/main/res/layout/activity_remove_debtor.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_update.xml" value="0.20520833333333333" />
         <entry key="app/src/main/res/layout/details.xml" value="0.129981884057971" />
+        <entry key="app/src/main/res/layout/single_row.xml" value="0.20520833333333333" />
       </map>
     </option>
   </component>

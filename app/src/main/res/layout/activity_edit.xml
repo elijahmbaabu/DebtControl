@@ -108,7 +108,6 @@
         android:textSize="20sp" />
 
 
-
     <EditText
         android:id="@+id/mytotal"
         android:layout_width="match_parent"

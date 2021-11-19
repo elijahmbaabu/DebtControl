@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,11 +9,17 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/password_reset"
         android:layout_height="50dp"
-        android:text="Debt Control Reset Password:"
+        android:text="Debt Control Password Reset."
         android:layout_marginLeft="20dp"
-        android:textSize="20dp"
+        android:textSize="24sp"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:textColor="#DC143C"
+        android:textFontWeight="1"
+        android:layout_margin="12dp"
         android:textStyle="bold"
         />
 
@@ -22,50 +28,58 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="Enter security Key"
-        android:layout_margin="10dp"
+        android:layout_margin="12dp"
         android:textSize="20dp"
+        android:layout_below="@+id/password_reset"
+
         />
     <EditText
         android:id="@+id/phoneNumber"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="Enter Phone number"
-        android:layout_margin="10dp"
+        android:layout_margin="12dp"
         android:textSize="20dp"
         android:inputType="number"
+        android:layout_below="@id/securityKey"
         />
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="Set new Password"
-        android:layout_margin="10dp"
+        android:layout_margin="12dp"
         android:textSize="20dp"
+        android:layout_below="@+id/phoneNumber"
         />
     <EditText
         android:id="@+id/passConfirm"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="Confirm New Password"
-        android:layout_margin="10dp"
+        android:layout_margin="12dp"
         android:textSize="20dp"
+        android:layout_below="@id/password"
         />
     <Button
         android:id="@+id/resetBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:text="Reset"
         android:layout_marginLeft="40dp"
         android:textSize="25dp"
+        android:layout_margin="12dp"
+        android:layout_below="@+id/passConfirm"
         />
     <Button
         android:id="@+id/backToLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:text="Back to Login"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="23dp"
+        android:layout_margin="12dp"
         android:textSize="20dp"
+        android:layout_below="@id/resetBtn"
         />
 
-</LinearLayout>
+</RelativeLayout>
