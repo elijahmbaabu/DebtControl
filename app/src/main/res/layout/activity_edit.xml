@@ -46,51 +46,31 @@
                 android:textSize="20dp"
                 android:textFontWeight="1"
                 android:textStyle="bold"
-                android:id="@+id/debtor_name"
+                android:id="@+id/displayName"
                 android:padding="6dp"
                 android:layout_margin="4dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Items"
-                android:textSize="20dp"
-                android:textFontWeight="1"
-                android:textStyle="bold"
-                android:id="@+id/items_name"
-                android:padding="6dp"
-                android:layout_margin="4dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Price"
-                android:textSize="20dp"
-                android:textFontWeight="1"
-                android:textStyle="bold"
-                android:id="@+id/item_price"
-                android:padding="6dp"
-                android:layout_margin="4dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Amount"
-                android:textSize="20dp"
-                android:textFontWeight="1"
-                android:textStyle="bold"
-                android:id="@+id/amount"
-                android:padding="6dp"
-                android:layout_margin="4dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Date"
-                android:textSize="20dp"
-                android:textFontWeight="1"
-                android:textStyle="bold"
-                android:id="@+id/date"
-                android:padding="6dp"
-                android:layout_margin="4dp"
 
-                />
+            <TextView
+                android:id="@+id/displayList"
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="6dp"
+                android:text="Items"
+                android:textFontWeight="1"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/displayTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="6dp"
+                android:text="Amount"
+                android:textFontWeight="1"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>
@@ -98,7 +78,7 @@
     </androidx.cardview.widget.CardView>
 
     <EditText
-        android:id="@+id/edit_name"
+        android:id="@+id/DebtorName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/record_details"
@@ -113,10 +93,10 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/edit_items"
+        android:id="@+id/mylist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edit_name"
+        android:layout_below="@+id/DebtorName"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="12dp"
@@ -127,26 +107,13 @@
         android:textAlignment="textStart"
         android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/edit_price"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/edit_items"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="12dp"
-        android:ems="10"
-        android:hint=" Enter New Items Price"
-        android:inputType="textPersonName"
-        android:textAlignment="textStart"
-        android:textSize="20sp" />
+
 
     <EditText
-        android:id="@+id/edit_amount"
+        android:id="@+id/mytotal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edit_price"
+        android:layout_below="@+id/mylist"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="12dp"
@@ -157,35 +124,21 @@
         android:textAlignment="textStart"
         android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/edit_date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/edit_amount"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="12dp"
-        android:ems="10"
-        android:hint=" Enter the New Date"
-        android:inputType="textPersonName"
-        android:textAlignment="textStart"
-        android:textSize="20sp" />
 
     <Button
-        android:id="@+id/btn_edit"
+        android:id="@+id/edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Edit"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textFontWeight="1"
-        android:layout_below="@+id/edit_date"
+        android:layout_below="@+id/mytotal"
         android:layout_margin="12dp"/>
 
     <TextView
-        android:id="@+id/btn_back"
-        android:layout_below="@id/btn_edit"
+        android:id="@+id/toMain"
+        android:layout_below="@id/edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Back"
@@ -201,7 +154,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:src="@drawable/ic_back"
-            android:layout_below="@id/btn_back"
+            android:layout_below="@id/toMain"
             android:layout_marginRight="12dp"
         android:layout_marginLeft="12dp"
         android:layout_marginBottom="12dp"/>
