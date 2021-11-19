@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DebtControl">
         <activity
+            android:name=".RemoveDebtor"
+            android:exported="true" />
+        <activity
             android:name=".AddDebtor"
             android:exported="true" />
         <activity

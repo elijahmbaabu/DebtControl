@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 public class Home extends AppCompatActivity {
 
-    ImageView edit, add;
+    ImageView edit, add, remove;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,7 @@ public class Home extends AppCompatActivity {
 
         edit = findViewById(R.id.imageView4);
         add = findViewById(R.id.imageView3);
+        remove = findViewById(R.id.imageView5);
 
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +32,13 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Home.this, AddDebtor.class));
+            }
+        });
+
+        remove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Home.this, RemoveDebtor.class));
             }
         });
 
